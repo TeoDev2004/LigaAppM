@@ -1,10 +1,23 @@
 import { useFonts } from "expo-font";
 import { Image } from "expo-image";
 import { useRouter } from "expo-router";
+import React from "react";
 import { Button, StyleSheet, View } from "react-native";
 import * as Animatable from "react-native-animatable";
 
 export default function Index() {
+  /*const player = useAudioPlayer("../assets/sounds/PokemonIndex.mp3");
+
+  useEffect(() => {
+    player.setIsLooping(true);
+    player.setVolume(0.4);
+    player.play();
+
+    return () => {
+      player.stop();
+      player.unload();
+    };
+  }, [player]);*/
   const router = useRouter();
   const [fontsLoaded] = useFonts({
     ChillChripFree: require("../assets/fonts/ChillChripFree.otf"),
